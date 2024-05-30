@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.armandmeppa</groupId>
+    <artifactId>sonatype-release-test</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>${project.artifactId}</name>
+    <description>Test the release of a maven project as library on the maven central repository using sonatype</description>
+    <url>https://github.com/armandmeppa/sonatype-release-test</url>
+    <licenses>
+        <license>
+            <name>LGPL 2.1 - GNU Lesser General Public License, version 2.1</name>
+            <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Armand Meppa</name>
+            <email>Armand.Meppa@adorsys.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>scm:git:git@github.com:armandmeppa/sonatype-release-test.git</url>
+        <connection>scm:git:git@github.com:armandmeppa/sonatype-release-test.git</connection>
+        <developerConnection>scm:git:git@github.com:armandmeppa/sonatype-release-test.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <name>Central Repository OSSRH</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

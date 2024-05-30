@@ -7,7 +7,7 @@
     <groupId>io.github.armandmeppa</groupId>
     <artifactId>sonatype-release-test</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>${project.artifactId}</name>
     <description>Test the release of a maven project as library on the maven central repository using sonatype</description>
     <url>https://github.com/armandmeppa/sonatype-release-test</url>
